@@ -1,0 +1,7 @@
+<% if @manufacturer.errors.any? %>
+  <%  @manufacturer.errors.full_messages.each do |msg| %>
+    <li>  <%= msg %>  </li>
+  <% end %>
+<% end %>
+
+<%= render 'new_manufacturer_form' %>

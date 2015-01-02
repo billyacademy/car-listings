@@ -1,1 +1,4 @@
-<%= render 'new_manufacturer_form' %>
+<% @manufacturers.each do |manufacturer| %>
+  <%= manufacturer.name %><br>
+  <%= manufacturer.country %><br><br>
+<% end %>
