@@ -15,7 +15,7 @@ redirected to the index of manufacturers
 
   scenario "user successfully creates a manufacturer" do
 
-    visit root_path
+    visit manufacturers_path
     fill_in "Name", with: 'Ford'
     fill_in "Country", with: 'USA'
     click_button "Submit"
