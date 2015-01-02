@@ -18,4 +18,6 @@ group :development, :test do
   gem 'launchy'
   gem 'byebug'
   gem 'spring'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
