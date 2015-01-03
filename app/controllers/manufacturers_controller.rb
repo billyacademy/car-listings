@@ -10,16 +10,13 @@ class ManufacturersController < ApplicationController
   def create
     @manufacturers = Manufacturer.all
     @manufacturer = Manufacturer.new(manufacturer_params)
+
     if @manufacturer.save
       redirect_to manufacturers_path
       flash[:notice] = "Manufacturer successfully created."
     else
       render :new
     end
-  end
-
-  def show
-    @manufacturer = Manufacturer.find(params[:id])
   end
 
   private
