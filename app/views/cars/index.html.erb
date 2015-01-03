@@ -1,0 +1,10 @@
+<h1> Cars for Sale: </h1>
+
+<% @cars.each do |car| %>
+  Manufacturer: <%= car.manufacturer.name %><br>
+  Color: <%= car.color %><br>
+  Year: <%= car.year %><br>
+  Mileage: <%= car.mileage %><br>
+  <%= car.description %><br><br>
+
+<% end %>

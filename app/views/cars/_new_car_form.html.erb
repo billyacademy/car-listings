@@ -1,8 +1,7 @@
 <%= form_for @car do |f| %>
-
 <div>
   <%= f.label :manufacturer_id %>
-  <%= f.text_field :manufacturer_id %>
+  <%= f.select :manufacturer_id, options_for_select(@manufacturers) %>
 </div>
 
 <div>

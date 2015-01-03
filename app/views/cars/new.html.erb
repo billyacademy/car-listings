@@ -1,1 +1,8 @@
+<% if @car.errors.any? %>
+  <div><% @car.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+  </div>
+<% end %>
+
 <%= render 'new_car_form' %>
